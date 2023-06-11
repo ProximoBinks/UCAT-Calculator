@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <title>TI-108 Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='description' content='Altitutor UCAT Calculator' />
+    <meta charset='UTF-8' />
+    <meta name='author' content='Elliot Koh' />
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css' />
+    <link rel='stylesheet' href='./css/main.css' />
+  </head>
+  <body>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='col-xs-12 col-sm-offset-4 col-sm-5 col-md-offset-5 col-md-4' id='calculator'>
+          <span class='form-control text-center' id='memoryNegativeError'>
+            <span id='memoryIndicator' class='gray'>M</span>
+            <br>
+            <span class='gray' id='negativeIndicator'>&mdash;</span>
+            <br>
+            <span class='gray' id='errorIndicator'>E</span>
+          </span><!--.memoryNegativeError-->
+          <input type='text' class='form-control text-right' autofocus disabled id='display' placeholder='0.0000000'>
+          <p class='text-justify' id='name'><small>ALTITUTOR</small><span id='brand'>&nbsp;&nbsp;TI-108</span></p>
+          <div class='solarPanel col-xs-1'></div>
+          <div class='solarPanel col-xs-1'></div>
+          <div class='solarPanel col-xs-1'></div>
+          <div class='solarPanel col-xs-1'></div>
+          <div class='col-xs-1'><input type='checkbox' id='calcTypeToggle'></div>
+          <div class='col-xs-12' id='bottomLine'><br></div>
+          <br>
+          <div id='buttons'>
+            <button class='btn btn-danger'>+/-</button>
+            <button class='btn btn-danger'>&radic;</button>
+            <button class='btn btn-danger'>%</button>
+            <button class='btn btn-danger'>&divide;</button>
+            <button class='btn btn-danger' id='MRCButton'>MRC</button>
+            <button class='btn btn-danger'>M-</button>
+            <button class='btn btn-danger'>M+</button>
+            <button class='btn btn-danger'>&times;</button>
+            <button class='btn btn-default'>7</button>
+            <button class='btn btn-default'>8</button>
+            <button class='btn btn-default'>9</button>
+            <button class='btn btn-danger'>-</button>
+            <button class='btn btn-default'>4</button>
+            <button class='btn btn-default'>5</button>
+            <button class='btn btn-default'>6</button>
+            <button class='btn btn-danger'>+</button>
+            <button class='btn btn-default moveUp'>1</button>
+            <button class='btn btn-default moveUp'>2</button>
+            <button class='btn btn-default moveUp'>3</button>
+            <button class='btn btn-danger' id='equalsKey'>=</button>
+            <button class='btn btn-danger moveUp2' id='onButton'>ON/C</button>
+            <button class='btn btn-default text-center moveUp2'>0</button>
+            <button class='btn btn-default text-center moveUp2'>.</button>
+          </div><!--buttons-->
+          <img src='./images/TI_Logo.png' alt id='logo'>
+        </div><!--#calculator-->
+      </div><!--row-fluid-->
+    </div><!--container-fluid-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js'></script>
+    <script src='./js/main.js'></script>
+  </body>
+</html>
