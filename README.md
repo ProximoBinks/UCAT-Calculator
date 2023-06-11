@@ -6,7 +6,7 @@ Altitutor's UCAT Calculator
 
 ## Demo
 
-You can try out the UCAT Timer [here](https://proximobinks.github.io/UCAT-Calculator/).
+You can try out the UCAT Calculator [here](https://proximobinks.github.io/UCAT-Calculator/).
 
 ## License
 
